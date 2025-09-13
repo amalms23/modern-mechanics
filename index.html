@@ -191,7 +191,10 @@
             margin-bottom: 15px;
             font-size: 1.05em;
         }
-        
+        .blog-post p, .blog-post li {
+        text-align: justify;
+        }
+
         .blog-post ul, .blog-post ol {
             padding-left: 25px;
         }
@@ -279,6 +282,90 @@
             color: #4dc3ff;
             text-decoration: underline;
         }
+
+.lab-acknowledgment {
+    background: #1e2330;
+    color: #e0e0e0;
+    padding: 42px 24px 32px 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    margin: 48px auto 0 auto;
+    text-align: center;
+    max-width: 900px;
+}
+.lab-acknowledgment img.lab-logo {
+    width: 260px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 3px 16px rgba(0,170,255,0.09);
+    background: #121921;
+    padding: 4px 10px;
+}
+.lab-acknowledgment .lab-desc {
+    font-size: 1.16em;
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+#lab-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 450px;
+    position: relative;
+    gap: 8px;
+}
+.lab-slides-container {
+    position: relative;
+    width: 50vw;
+    max-width: 700px;
+    min-width: 300px;
+    height: 32vw;
+    max-height: 440px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin: 0 auto;
+}
+.lab-member-img {
+    display: none;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 100%;      /* fill the .lab-slides-container */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,170,255,0.20);
+    border: 5px solid #2c4858;
+    opacity: 0;
+    transform: scale(0.98) rotateY(60deg);
+    transition: opacity 0.6s, transform 0.7s;
+    z-index: 0;
+}
+.lab-member-img.active {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1.01) rotateY(0deg);
+}
+@media (max-width: 650px) {
+    .lab-slides-container {
+        width: 95vw;
+        min-width: 130px;
+        height: 55vw;
+        max-width: 100vw;
+        max-height: 330px;
+    }
+    .lab-member-img, .lab-member-img.active {
+        border-radius: 12px;
+        border-width: 3px;
+    }
+}
 
         .author-note {
             background-color: var(--card-background);
@@ -394,12 +481,14 @@
     <nav>
         <div class="container">
             <a href="https://home.iitk.ac.in/~amalms22/">Home</a>
+            <!--
             <a href="#intro">Metamaterials</a>
             <a href="#deployable-structures">Deployable Structures</a>
             <a href="#origami-engineering">Origami Engineering</a>
             <a href="#active-matter">Active & Programmable Matter</a>
             <a href="#future-apps">Applications</a>
             <a href="#conclusion">Future</a>
+            -->
         </div>
     </nav>
 
@@ -629,6 +718,164 @@
                 </ol>
                 <p>The journey from simple folds to intelligent matter is a testament to the power of interdisciplinary innovation. By continuing to explore the exploitable nexus of geometry, mechanics, and multi-physical physics, we are not just building better materials—we are programming the physical world itself.</p>
             </section>
+<section id="references">
+  <style>
+    #references {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: #ffffff;
+      font-size: 0.8em; /* <-- This sets the font size smaller */
+    }
+    #references h2 {
+      color: #338033;
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+    }
+    #references ol {
+      padding-left: 1.5em;
+    }
+    #references li {
+      margin-bottom: 1em;
+    }
+    #references a {
+      color: #a2b92f;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    #references i {
+      color: #557742;
+    }
+  </style>
+  <h2>References</h2>
+  <ol>
+    <li>
+      Sinha, P., &amp; Mukhopadhyay, T. (2023). Programmable multi-physical mechanics of mechanical metamaterials. <i>Materials Science and Engineering: R: Reports, 155</i>, 100745. 
+      <a href="https://doi.org/10.1016/j.mser.2023.100745" target="_blank">https://doi.org/10.1016/j.mser.2023.100745</a>
+    </li>
+    <li>
+      Sharma, A., Naskar, S., &amp; Mukhopadhyay, T. (2025). Multi-physically programmable tubular origami metamaterials: Exploitable nexus of geometry, folding mechanics and stimuli-responsive physics. <i>Advanced Science.</i>
+      <a href="https://doi.org/10.1002/advs.202505089" target="_blank">https://doi.org/10.1002/advs.202505089</a>
+    </li>
+    <li>
+      Programmable Matter Lab. (n.d.). Programmable Matter Lab – Tanmoy Mukhopadhyay, University of Southampton. 
+      <a href="https://www.tmukhopadhyay.com/programmable-matter-lab" target="_blank">https://www.tmukhopadhyay.com/programmable-matter-lab</a>
+    </li>
+    <li>
+      Advanced Materials Cover. (2025). <i>Advanced Materials.</i>
+      <a href="https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202570116" target="_blank">https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202570116</a>
+    </li>
+    <li>
+      Jiao, P., Mueller, J., Raney, J. R., et al. (2023). Rational design of mechanical metamaterials through digital processing. <i>Nature Communications, 14</i>, 6004. 
+      <a href="https://doi.org/10.1038/s41467-023-41679-8" target="_blank">https://doi.org/10.1038/s41467-023-41679-8</a>
+    </li>
+    <li>
+      Ma, W. W. S., et al. (2025). Multi-physical lattice metamaterials enabled by additive manufacturing: Design principles, interaction mechanisms, and multifunctional applications. <i>Advanced Science, 12</i>(8), 2405835.
+      <a href="https://doi.org/10.1002/advs.202405835" target="_blank">https://doi.org/10.1002/advs.202405835</a>
+    </li>
+    <li>
+      Karlsruhe Institute of Technology (KIT). (n.d.). Virtual design of 3D chiral metamaterials.
+      <a href="http://materials.kit.edu/307.php" target="_blank">http://materials.kit.edu/307.php</a>
+    </li>
+    <li>
+      Zhao Lab. (2021). Stretchable origami robotic arm with omnidirectional bending and twisting. <i>Proceedings of the National Academy of Sciences, 118</i>(43), e2110023118.
+      <a href="https://doi.org/10.1073/pnas.2110023118" target="_blank">https://doi.org/10.1073/pnas.2110023118</a>
+    </li>
+    <li>
+      Natural Origami. (2016, June 29). Mountains and valleys: Exploring Maekawa’s theorem.
+      <a href="https://naturalorigami.wordpress.com/2016/06/29/mountains-and-valleys-exploring-maekawas-theorem/" target="_blank">https://naturalorigami.wordpress.com/2016/06/29/mountains-and-valleys-exploring-maekawas-theorem/</a>
+    </li>
+    <li>
+      OriLab. (n.d.). Kresling.
+      <a href="https://orilab.art/natural/kresling" target="_blank">https://orilab.art/natural/kresling</a>
+    </li>
+    <li>
+      Wikimedia Commons. (n.d.). Spherical deployable mechanism [GIF].
+      <a href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Spherical_Deployable_Mechanism.gif" target="_blank">https://upload.wikimedia.org/wikipedia/commons/9/9f/Spherical_Deployable_Mechanism.gif</a>
+    </li>
+    <li>
+      Kwakernaak, L. J., &amp; van Hecke, M. (2023). Counting and sequential information processing in mechanical metamaterials. <i>Physical Review Letters, 130</i>, 268204.
+      <a href="https://doi.org/10.1103/PhysRevLett.130.268204" target="_blank">https://doi.org/10.1103/PhysRevLett.130.268204</a>
+    </li>
+    <li>
+      Gao, L., et al. (2019). Magnetic actuation of flexible microelectrode arrays for neural activity recordings. <i>Nano Letters, 19</i>(11), 8032–8039.
+      <a href="https://doi.org/10.1021/acs.nanolett.9b03232" target="_blank">https://doi.org/10.1021/acs.nanolett.9b03232</a>
+    </li>
+    <li>
+      El Helou, C., Buskohl, P. R., &amp; Tabor, C. E., et al. (2021). Digital logic gates in soft, conductive mechanical metamaterials. <i>Nature Communications, 12</i>, 1633.
+      <a href="https://doi.org/10.1038/s41467-021-21920-y" target="_blank">https://doi.org/10.1038/s41467-021-21920-y</a>
+    </li>
+    <li>
+      Vasconcelos, A. C. A., et al. (2025). Hybrid mechanical metamaterials: Advances of multi-material, hierarchical, and multifunctional designs. <i>Heliyon, 11</i>(6), e20196.
+      <a href="https://www.sciencedirect.com/science/article/pii/S2405844025003652" target="_blank">https://www.sciencedirect.com/science/article/pii/S2405844025003652</a>
+    </li>
+    <li>
+      Suhas, P., et al. (2025). A review on mechanical metamaterials and additive manufacturing strategies for biomedical applications. <i>Materials Advances, 6</i>(3), 874–899.
+      <a href="https://pubs.rsc.org/en/content/articlehtml/2025/ma/d4ma00874j" target="_blank">https://pubs.rsc.org/en/content/articlehtml/2025/ma/d4ma00874j</a>
+    </li>
+    <li>
+      Zhang, L., et al. (2025). Mechanical metamaterials with negative Poisson’s ratio: Topology-property relationships and deformation mechanisms. <i>Composite Structures.</i>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0141029625002287" target="_blank">https://www.sciencedirect.com/science/article/abs/pii/S0141029625002287</a>
+    </li>
+    <li>
+      Ma, F. (2025). Acoustic and mechanical metamaterials for various applications – A brief review. <i>Frontiers in Materials, 12</i>, 1626945.
+      <a href="https://www.frontiersin.org/journals/materials/articles/10.3389/fmats.2025.1626945/full" target="_blank">https://www.frontiersin.org/journals/materials/articles/10.3389/fmats.2025.1626945/full</a>
+    </li>
+    <li>
+      Imada, R., et al. (2025). Maxwell origami tube. <i>Physical Review Research, 7</i>, 013032.
+      <a href="https://link.aps.org/doi/10.1103/PhysRevResearch.7.013032" target="_blank">https://link.aps.org/doi/10.1103/PhysRevResearch.7.013032</a>
+    </li>
+    <li>
+      Yan, S., et al. (2025). Snap-through instability in mechanical metamaterials. <i>Rapid Prototyping Journal, 31</i>(4).
+      <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rpm.20240035" target="_blank">https://onlinelibrary.wiley.com/doi/full/10.1002/rpm.20240035</a>
+    </li>
+    <li>
+      Wu, R. Y., et al. (2023). Programmable metamaterials. <i>Programmable Materials, 1</i>(1), e97F91407E95B99C8CDE5A4238BF0E2E6.
+      <a href="https://www.cambridge.org/core/journals/programmable-materials/article/programmable-metamaterials/97F91407E95B99C8CDE5A4238BF0E2E6" target="_blank">https://www.cambridge.org/core/journals/programmable-materials/article/programmable-metamaterials/97F91407E95B99C8CDE5A4238BF0E2E6</a>
+    </li>
+    <li>
+      Feng, H., et al. (2018). Twist of tubular mechanical metamaterials based on waterbomb origami. <i>Scientific Reports, 8</i>, 8983.
+      <a href="https://www.nature.com/articles/s41598-018-27877-1" target="_blank">https://www.nature.com/articles/s41598-018-27877-1</a>
+    </li>
+    <li>
+      Ma, X., et al. (2025). Programmable metamaterials with perforated shell group for high-density information storage. <i>Frontiers in Materials, 12</i>.
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12199329/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12199329/</a>
+    </li>
+  </ol>
+</section>
+
+
+<section class="lab-acknowledgment">
+    <h4>Spotlight on the Programmable Matter Lab</h4>
+  <!-- Lab logo -->
+  <img src="lab_logo.png" alt="Programmable Matter Lab Logo" class="lab-logo">
+
+  <!-- Description -->
+  <p class="lab-desc">
+    <b>The lab focuses on designing and analyzing structures that are not only mechanically robust but also actively responsive to multiple external stimuli.</b>
+    Research spans across deployable origami structures, multi-function metamaterials, advanced manufacturing, and integration of materials intelligence into engineering devices.
+  </p>
+
+ <!-- Slider wrapper (shows only one image) -->
+  <div id="lab-carousel">
+    <button class="lab-slider-btn left" onclick="slideLab(-1)">&#8678;</button>
+    <div class="lab-slides-container">
+      <img src="ecc0.jpeg" alt="Lab member 1" class="lab-member-img active">
+      <img src="ecc1.jpeg" alt="Lab member 2" class="lab-member-img">
+      <img src="ramia1.jpg" alt="Lab member 3" class="lab-member-img">
+      <img src="ramia2.jpg" alt="Lab member 4" class="lab-member-img">
+      <!-- Add/remove images as needed -->
+    </div>
+    <button class="lab-slider-btn right" onclick="slideLab(1)">&#8680;</button>
+  </div>
+
+  <div class="lab-cta">
+    <b>Interested?</b> Explore the
+    <a href="https://www.tmukhopadhyay.com/programmable-matter-lab" target="_blank" style="color:#4dc3ff;">
+      Programmable Matter Lab
+    </a>
+    at University of Southampton &mdash; where smart materials and intelligent structures come to life!
+  </div>
+</section>
 
         </article>
         
@@ -664,6 +911,7 @@
                     </li>
                     <li><a href="#modeling">Computational Modelling</a></li>
                     <li><a href="#conclusion">Conclusion: The Road Ahead</a></li>
+                    <li><a href="#references">References</a></li>
                 </ul>
             </div>
         </aside>
@@ -673,7 +921,7 @@
         <div class="container">
             <h3>About the Author</h3>
             <img src="amal.jpg" alt="Author Photo Amal M S">
-            <p>Hello! I'm Amal M S, a passionate engineer and futurist with a deep fascination for how technology shapes our world. This blog is my platform to explore the most groundbreaking advancements in mechanics, share insights, and spark conversations about the future of engineering. With a Master's in Computational Mechanics of Solids and Structures and a background in Production Engineering, I strive to make complex ideas accessible and exciting for enthusiasts and professionals alike. Join me on this journey to discover the next generation of mechanical marvels!</p>
+            <p>Hello! I'm Amal M S, a passionate engineer and futurist with a deep fascination for how technology shapes our world. This blog is my platform to explore the most groundbreaking advancements in mechanics, share insights, and spark conversations about the future of engineering. With a Master's in Computational Mechanics of Solids and Structures from IIT Kanpur and a background in Production Engineering, I strive to make complex ideas accessible and exciting for enthusiasts and professionals alike. Join me on this journey to discover the next generation of mechanical marvels!</p>
         </div>
     </section>
 
@@ -682,6 +930,23 @@
             <p>&copy; 2025 Modern Mechanics Blog. All rights reserved.</p>
         </div>
     </footer>
+<script>
+let labCurrent = 0;
+const labImgs = document.querySelectorAll(".lab-slides-container .lab-member-img");
+function showLabImg(idx) {
+    labImgs.forEach((img, i) => {
+        img.classList.toggle("active", i === idx);
+    });
+}
+function slideLab(dir) {
+    labCurrent = (labCurrent + dir + labImgs.length) % labImgs.length;
+    showLabImg(labCurrent);
+}
+// Init on page load
+showLabImg(labCurrent);
+// Auto-rotate every 3.5s
+setInterval(() => { slideLab(1); }, 3500);
+</script>
 
 </body>
 </html>
